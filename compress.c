@@ -72,7 +72,7 @@ int compress(char *fileName) {
 
 	if(getHeapSize(heap) == 1) {
 		huffnode_t *node1 = dequeue(heap);
-        huffnode_t *merged = merge(node1, NULL);
+        	huffnode_t *merged = merge(node1, NULL);
 
 		enqueue(heap, merged);
 
